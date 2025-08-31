@@ -1,7 +1,7 @@
 import typer
 from pathlib import Path
 import argparse
-from core_logic import receive_paths
+from .core_logic import receive_paths
 
 app = typer.Typer()
 

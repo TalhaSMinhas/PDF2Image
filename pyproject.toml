@@ -1,0 +1,17 @@
+[project]
+name = "pdf2img"
+version = "0.1.0"
+description = "A simple CLI tool for converting pdfs to images!"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "typer[all]",
+    "rich"
+]
+
+[project.scripts]
+pdf2img = "pdf2img.cli:app"
+
+[tool.setuptools]
+packages = ["pdf2img"]
+package-dir = {"" = "src"}
